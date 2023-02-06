@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>\
+<!--event 리스너에서 this 키워드를 사용하면 event 발생한 자기 자신을 의미-->
+<html lang="en">
+<head>
+    <title>Document</title>
+
+</head>
+<body>
+    <button id="button">버튼</button>
+    <script>
+        document.getElementById('button').onclick = function(){
+            this.textContent = this.textContnet + '★';
+        }
+    </script>
+</body>
+</html>

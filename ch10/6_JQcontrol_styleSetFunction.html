@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+</body>
+</html>
+
+<!DOCTYPE html>
+<!--jquery는 $로 시작하며 인자값으로 CSS selector를 줄 수 있다-->
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            var output = '';
+            for(var i=0; i<256; i++){
+                output += '<div></div>';
+            }
+            document.body.innerHTML = output;
+
+            var divs = document.querySelectorAll('div');
+            for (var i=0; i<divs.length; i++){
+                var div = divs[i];
+                div.style.height = '2px';
+                div.style.background = 'rgb('+ i + ',' + i + ',' + i + ')'
+            }
+        });
+    </script>
+</head>
+<body>
+
+</body>
+</html>

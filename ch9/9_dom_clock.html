@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+            var clock = document.getElementById('clock');
+            setInterval(function(){
+                var now = new Date();
+                clock.innerHTML = now.toString();
+                clock.style.height = '200px';
+                clock.style.width = '500px';
+                clock.style.color = 'purple';
+
+            }, 1000);
+        }
+    </script>
+</head>
+<body>
+    <hi id="clock"></hi>
+</body>
+</html>

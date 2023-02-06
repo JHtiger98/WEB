@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--중앙 정렬하고 싶은 태그에 width 속성을 부여하고 margin 속성을 0 auto로 입력-->
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0 auto;
+            width: 500px;
+        }
+        #middle{
+            overflow: hidden;
+        }
+        #left{
+            float: left;
+            width: 200px;
+            height: 100px;
+            background: red;
+        }
+        #right{
+            float: right;
+            width: 300px;
+            height: 100px;
+            background: blue;
+        }
+        #top{
+            background: green;
+        }
+        #bottom{
+            background: purple;
+        }
+    </style>
+</head>
+<body>
+    <div id="top">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium adipisci, rem doloremque eveniet ipsa in saepe quam ipsam consequuntur excepturi necessitatibus modi esse repellendus temporibus officia sapiente magnam laudantium iusto.</div>
+    <div id="middle">
+        <div id="left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ipsam.</div>
+        <div id="right">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla culpa ipsum sit dolorem repellendus? Nobis sequi laudantium iste vel error!</div>
+    </div>
+    <div id="bottom">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur quod, doloribus id quos voluptatem similique eum excepturi. Adipisci, consequuntur veniam!</div>
+</body>
+</html>

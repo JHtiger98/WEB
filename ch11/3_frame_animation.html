@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+            var count = 0;
+            var image = document.getElementById('image');
+            var frames = [
+                'frame_animation/0.png', 'frame_animation/1.png',
+                'frame_animation/2.png', 'frame_animation/3.png',
+                'frame_animation/4.png', 'frame_animation/5.png',
+                'frame_animation/6.png', 'frame_animation/7.png',
+                'frame_animation/8.png', 'frame_animation/9.png',
+                'frame_animation/10.png', 'frame_animation/11.png',
+                'frame_animation/12.png', 'frame_animation/13.png',
+                'frame_animation/14.png'
+            ];
+
+        //타이머 1초에 20번 반복
+        setInterval(function(){
+            image.src = frames[count % frames.length];
+            count += 1;
+        }, 1000 / 20);
+    };
+    </script>
+</head>
+<body>
+    <img id="image">
+</body>
+</html>

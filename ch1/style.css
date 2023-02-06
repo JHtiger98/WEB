@@ -1,0 +1,9 @@
+/*외부 스타일시트 작성*/
+h1 {
+    color: white;
+    background: rgb(12,170,100);
+}
+h3 {
+    color: blue;
+    background: rgb(150,100,100);
+}

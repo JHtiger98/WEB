@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <!--script를 head에 넣을 경우-->
+    <script>
+        window.onload = function(){
+            //선택자가 여러개이면 가장 먼저 나오는 것을 선택
+            var header = document.querySelector('h1');
+            header.style.color = 'red';
+            header.style.background = 'black';
+            header.innerHTML = 'From JavaScript';
+
+            //여러개 한번에 선택하는 방법
+            var headers = document.querySelectorAll('h2');
+            for (var i=0; i<headers.length; i++){
+                var header = headers[i];
+                header.style.color = 'red';
+                header.style.background = 'black';
+                header.innerHTML = 'Multiple';
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Header</h1>
+    <h1>Header</h1>
+    <h1>Header</h1>
+    <h2>Header2</h2>
+    <h2>Header2</h2>
+    <h2>Header2</h2>
+</body>
+</html>

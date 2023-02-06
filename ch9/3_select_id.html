@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <!--script를 head에 넣을 경우-->
+    <script>
+        window.onload = function(){
+            //문서 객체 선택
+            var header = document.getElementById('header');
+            //문서 객체 조작
+            header.style.color = 'red';
+            header.style.background = 'black';
+            header.innerHTML = 'From JavaScript';
+        }
+    </script>
+</head>
+<body>
+    <h1 id="header">Header</h1>
+</body>
+</html>

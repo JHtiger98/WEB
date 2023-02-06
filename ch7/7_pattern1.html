@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--반응형 웹 패턴-->
+<html lang="en">
+<head>
+    <title>Pattern 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+                width: 960px;
+                margin: 0 auto;
+                overflow: hidden;
+        }
+        #menu {
+                width: 260px;
+                float: left;
+        }
+        #section{
+                width: 700px;
+                float: right;
+
+        }
+        @media screen and (max-width: 767px){
+            /*스마트폰 사이즈에서는 전부 해제*/
+            body{
+                width: auto;
+            }
+            #menu {
+                width: auto;
+                float: none;
+            }
+            #section{
+                width: auto;
+                float:none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li>menu A</li>
+            <li>menu B</li>
+            <li>menu C</li>
+        </ul>
+    </div>
+    <div id="section">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eligendi dolore nostrum officia sit numquam repellat dolorem error, odit, culpa ducimus tempora eos velit pariatur natus at architecto harum? Veritatis?</p>
+    </div>
+</body>
+</html>

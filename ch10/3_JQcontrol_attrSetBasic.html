@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--jquery는 $로 시작하며 인자값으로 CSS selector를 줄 수 있다-->
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('img').attr('alt', 'jQuery 라이브러리를 사용한 속성 지정');
+            $('img').attr('src', "http://placekitten.com/190/328");
+            $('img').attr('width','300')
+        });
+    </script>
+</head>
+<body>
+    <img>
+    <img>
+    <img>
+    <img>
+    <img>
+    <img>
+</body>
+</html>
